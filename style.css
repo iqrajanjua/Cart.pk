@@ -1,0 +1,35 @@
+
+
+
+  /* Media query for iPads in landscape mode and larger tablets */
+@media only screen and (min-width: 260px) and (max-width: 990px) {
+    /* Your styles for iPads go here */
+    .font {position: relative;top: 100px;}
+   
+    .mob{position: relative;top: 50px;}
+    
+    .tit{position: relative;top: 50px;}
+    
+    .laptop{font-size: 50px;}
+
+    .nugget{height: 200px;}
+
+    .paratha{height: 200px;}
+  
+  }
+  
+  @media only screen and (min-width: 991px) and (max-width: 1800px)
+  {.tit{position: relative;top: 50px;}
+  .laptop{font-size: 70px;}
+  .mob{position: relative;top: 50px;}
+
+  .paratha{height: 260px;}
+  .nugget{height: 260px;}
+  .vege{height: 260px;} 
+  .paint{height: 260px;}
+.detergent{height: 260px;}
+.cardimg{height: 239px;}
+.cardimg2{height: 220px;}
+
+
+}

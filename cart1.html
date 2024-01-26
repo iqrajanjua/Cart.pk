@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- js -->
+
+    <script src="app.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- font   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- header for large screen -->
+    <nav class="navbar-nav d-none d-lg-flex" style="background-color:rgb(255, 80, 80)">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Welcome To Cart Pk</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html" style="color: white;">Sign In OR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registration.html" style="color: white;">Create An Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbar bg-body-tertiary d-none d-lg-flex">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.cartpk.com/media/logo/stores/1/Cartpk_1.png" alt="Bootstrap" width="100"
+                    height="40">
+            </a>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="grocery.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="frozen.html">Frozen Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="bakery.html">Bakery Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="stationary.html">Stationary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="homecare.html">Home Care</a>
+                </li>
+                <li>
+
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                            <i class="fa-solid fa-cart-shopping " style="position: relative;top: 10px;left:10px;"></i>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+    </nav>
+
+
+    <!-- laptop header end -->
+
+
+
+    <!-- mobile header start -->
+
+    <nav class="navbar bg-body-tertiary fixed-top d-lg-none ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="https://www.cartpk.com/media/logo/stores/1/Cartpk_1.png"
+                    alt="Bootstrap" width="100" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CartPk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Welcome to cartpk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create An Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Frozen Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Fresh Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Stationary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Home Care</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- product card -->
+    <br>
+    <div class="container ">
+        <div class="row  ">
+
+            <div class="col-lg-5 mt-5">
+
+
+                <img style="height: 300px;width: 300px;"
+                    src="data:image/jpeg;base64,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"
+                    class="img-fluid" alt="...">
+            </div>
+
+            <div class="col-lg-7 ">
+
+                <ul style="list-style: none;">
+
+                    <li>
+                        <h1>SUNRIDGE DIGESTIVE ATTA 2KG</h1>
+                    </li>
+
+                    <li>
+                        <h1 id="price" data-price="470">RS 470</h1>
+                    </li>
+
+                    <li>
+                        <div style="color: red;"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+
+                        </div>
+                    </li>
+
+                    <br>
+                    <li> <input type="submit" value="+" onclick="increment()">
+                        <input type="text" value="0" id="invalue" style="width: 50px;">
+                        <input type="submit" onclick="decrement()" value="-">
+                    </li>
+
+                    <br>
+                    <li>
+                        <h2 id="price2"></h2>
+
+                    </li>
+
+
+
+
+                    <!-- modal -->
+
+
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Pills navs -->
+                                    <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="tab-login" data-mdb-toggle="pill"
+                                                href="#pills-login" role="tab" aria-controls="pills-login"
+                                                aria-selected="true">Login</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="tab-register" data-mdb-toggle="pill"
+                                                href="#pills-register" role="tab" aria-controls="pills-register"
+                                                aria-selected="false">Register</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Pills navs -->
+
+                                    <!-- Pills content -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel"
+                                            aria-labelledby="tab-login">
+                                            <form>
+                                                <div class="text-center mb-3">
+                                                    <p>Sign in with:</p>
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-google"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-github"></i>
+                                                    </button>
+                                                </div>
+
+                                                <p class="text-center">or:</p>
+
+                                                <!-- Email input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="email" id="loginName" class="form-control" />
+                                                    <label class="form-label" for="loginName">Email or username</label>
+                                                </div>
+
+                                                <!-- Password input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="password" id="loginPassword" class="form-control" />
+                                                    <label class="form-label" for="loginPassword">Password</label>
+                                                </div>
+
+                                                <!-- 2 column grid layout -->
+                                                <div class="row mb-4">
+                                                    <div class="col-md-6 d-flex justify-content-center">
+                                                        <!-- Checkbox -->
+                                                        <div class="form-check mb-3 mb-md-0">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="loginCheck" checked />
+                                                            <label class="form-check-label" for="loginCheck"> Remember
+                                                                me </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 d-flex justify-content-center">
+                                                        <!-- Simple link -->
+                                                        <a href="#!">Forgot password?</a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Submit button -->
+                                                <button type="submit" class="btn btn-primary btn-block mb-4">Sign
+                                                    in</button>
+
+                                                <!-- Register buttons -->
+                                                <div class="text-center">
+                                                    <p>Not a member? <a href="#!">Register</a></p>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-register" role="tabpanel"
+                                            aria-labelledby="tab-register">
+                                            <form>
+                                                <div class="text-center mb-3">
+                                                    <p>Sign up with:</p>
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-google"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                                        <i class="fab fa-github"></i>
+                                                    </button>
+                                                </div>
+
+                                                <p class="text-center">or:</p>
+
+                                                <!-- Name input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="text" id="registerName" class="form-control" />
+                                                    <label class="form-label" for="registerName">Name</label>
+                                                </div>
+
+                                                <!-- Username input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="text" id="registerUsername" class="form-control" />
+                                                    <label class="form-label" for="registerUsername">Username</label>
+                                                </div>
+
+                                                <!-- Email input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="email" id="registerEmail" class="form-control" />
+                                                    <label class="form-label" for="registerEmail">Email</label>
+                                                </div>
+
+                                                <!-- Password input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="password" id="registerPassword" class="form-control" />
+                                                    <label class="form-label" for="registerPassword">Password</label>
+                                                </div>
+
+                                                <!-- Repeat Password input -->
+                                                <div class="form-outline mb-4">
+                                                    <input type="password" id="registerRepeatPassword"
+                                                        class="form-control" />
+                                                    <label class="form-label" for="registerRepeatPassword">Repeat
+                                                        password</label>
+                                                </div>
+
+                                                <!-- Checkbox -->
+                                                <div class="form-check d-flex justify-content-center mb-4">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="registerCheck" checked
+                                                        aria-describedby="registerCheckHelpText" />
+                                                    <label class="form-check-label" for="registerCheck">
+                                                        I have read and agree to the terms
+                                                    </label>
+                                                </div>
+
+                                                <!-- Submit button -->
+                                                <button type="submit" class="btn btn-primary btn-block mb-3">Sign
+                                                    in</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- Pills content -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Add to
+                        cart</button> <button type="button" class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- modal end -->
+    <!-- footer -->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <br><br><br><br><br><br><br>
+
+
+
+    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4" style="background-color: black;">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4" style="color: grey;">CARTPK (PVT) LTD</h5>
+
+                    <ul class="list-unstyled mb-4">
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">+92654702</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">cs@cartpk.com</a>
+                        </li>
+                        <li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4" style="color: gray;">CUSTOMER SERVICE</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">Contact US</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4" style="color: gray;">Seller Central</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">Become A Seller</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white" style="text-decoration: none;">Seller Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4" style="color: gray;">Let's stay in touch</h5>
+
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control " />
+                        <label class="form-label text-white" for="form5Example2">Email address</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-white btn-block text-white">Sign in</button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+
+    </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

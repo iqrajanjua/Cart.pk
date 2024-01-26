@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- font   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+    integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!-- header for large screen -->
+  <nav class="navbar-nav d-none d-lg-flex" style="background-color:rgb(255, 80, 80)">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Welcome To Cart Pk</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signin.html" style="color: white;">Sign In OR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registration.html" style="color: white;">Create An Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true"></a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="navbar bg-body-tertiary d-none d-lg-flex">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.cartpk.com/media/logo/stores/1/Cartpk_1.png" alt="Bootstrap" width="100" height="40">
+      </a>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="" aria-current="" >Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="frozen.html">Frozen Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="bakery.html">Bakery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="stationary.html">Stationary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="homecare.html">Home Care</a>
+        </li>
+      
+<li>
+      <form class="d-flex" role="search">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+            aria-describedby="basic-addon1">
+          <i class="fa-solid fa-cart-shopping " style="position: relative;top: 10px;left:10px;"></i>
+        </div>
+      </form> </li>        </ul>
+  </nav>
+
+
+  <!-- laptop header end -->
+
+
+
+  <!-- mobile header start -->
+
+  <nav class="navbar bg-body-tertiary fixed-top d-lg-none ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="https://www.cartpk.com/media/logo/stores/1/Cartpk_1.png"
+          alt="Bootstrap" width="100" height="40"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CartPk</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Welcome to cartpk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create An Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Frozen Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Bakery </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Stationary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Home Care</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 
+grid start -->
+
+  <h3 class="display-3 font "> GROCERY 
+  </h3>
+  <br><br>
+  <div class="container mob ">
+    <div class="row ">
+      <div class="col-lg-4 col-md-12 mb-4 ">
+        <div class="card text-bg-dark text-center">
+          <img src="https://www.cartpk.com/media/wysiwyg/flour.jpg" class="card-img"
+            alt="...">
+          <div class="card-img-overlay">
+         <a href="flour.html" style="color: white;text-decoration: none;">  <h3 class="card-title tit">FLOUR</h3></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12 mb-4  ">
+        <div class="card text-bg-dark text-center ">
+          <img src="https://www.cartpk.com/media/wysiwyg/oil-ghee.jpg" class="card-img"
+            alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title tit">OIL/GHEE</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4  ">
+        <div class="card text-bg-dark text-center ">
+          <img src="https://www.cartpk.com/media/wysiwyg/sugar.jpg" class="card-img"
+            alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title tit">SUGAR</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- 2ND CARD ROW START-->
+
+
+    <div class="container  ">
+
+      <div class="row ">
+        <div class="col-lg-4 col-md-12 mb-4 ">
+          <div class="card text-bg-dark text-center">
+            <img src="https://www.cartpk.com/media/wysiwyg/daal-beans.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h3 class="card-title  tit ">DAAL/BEANS</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4  ">
+          <div class="card text-bg-dark text-center ">
+            <img src="https://www.cartpk.com/media/wysiwyg/rice.jpg"
+              class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h3 class="card-title tit">RICE</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4  ">
+          <div class="card text-bg-dark text-center ">
+            <img src="https://www.cartpk.com/media/wysiwyg/buy-pasta-online-in-pakistan.jpg"
+              class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h3 class="card-title tit">PASTA</h3>
+            </div>
+          </div>
+        </div></div>
+        <!--        
+       3RD ROW START -->
+        <div class="container  ">
+
+          <div class="row ">
+            <div class="col-lg-4 col-md-12 mb-4 ">
+              <div class="card text-bg-dark text-center">
+                <img src="https://www.cartpk.com/media/wysiwyg/spices.jpg"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h3 class="card-title tit">SPICES</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4  ">
+              <div class="card text-bg-dark text-center ">
+                <img src="https://www.cartpk.com/media/wysiwyg/buy-sauces-online-in-pakistan_2.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h3 class="card-title tit">SAUCES</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4  ">
+              <div class="card text-bg-dark text-center ">
+                <img src="https://www.cartpk.com/media/wysiwyg/buy-ready-made-food-online-in-karachi-pakistan.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h3 class="card-title tit">READY <BR>MADE<BR> RECEIPE</h3>
+                </div>
+              </div>
+            </div></div>
+          
+
+              <!--        
+             4RD ROW START -->
+              <div class="container  ">
+      
+                <div class="row ">
+                  <div class="col-lg-4 col-md-12 mb-4 ">
+                    <div class="card text-bg-dark text-center">
+                      <img src="https://www.cartpk.com/media/wysiwyg/buy-tea-online-in-pakistan_1.jpg"
+                        class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title tit">TEA</h3>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-lg-4 col-md-12 mb-4  ">
+                    <div class="card text-bg-dark text-center ">
+                      <img src="https://www.cartpk.com/media/wysiwyg/buy-coffee-online-in-pakistan_1.jpg" class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title tit">COFFEE</h3>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-lg-4 col-md-12 mb-4  ">
+                    <div class="card text-bg-dark text-center ">
+                      <img src="https://www.cartpk.com/media/wysiwyg/bevrages.jpg" class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h3 class="card-title tit">BEVERGES</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+          <!-- end -->
+
+          <div class="container mob ">
+
+            <div class="row ">
+              <div class="col-lg-4 col-md-12 mb-4 ">
+                <div class="card  text-center " style="height: 190px;border:none;background-color: rgb(168, 166, 166);">
+                  <h3 class="card-title tit">HOW IT WORKS</h3>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-12 mb-4  ">
+                <div class="card  text-center  " style="border:none">
+                  <i class="fa-solid fa-laptop laptop"></i>
+                  <h4 class="card-title ">PLACE YOUR ORDER HERE</h4>
+                  <p class="card-text">Conveniently use a computer or smartphone to place your order. Pay via
+                    Credit/Debit card online or Cash upon Delivery.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-12 mb-4  ">
+                <div class="card  text-center  " style="border:none">
+                  <i class="fa-solid fa-truck laptop"></i>
+                  <h4 class="card-title ">DELIVERY WITHIN 2 HOURS</h4>
+                  <p class="card-text">Once you place your order online, your order will be delivered in the time slot
+                    you have chosen at checkout.</p>
+                </div>
+              </div></div></div></div></div></div></div></div>
+
+
+            
+    
+        
+    
+
+      <!-- footer -->
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<br><br><br><br><br>
+
+
+  <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4" style="background-color: black;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4" style="color: grey;">CARTPK (PVT) LTD</h5>
+
+        <ul class="list-unstyled mb-4">
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">+92654702</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">cs@cartpk.com</a>
+          </li>
+          <li>
+        
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4" style="color: gray;">CUSTOMER SERVICE</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white"style="text-decoration: none;" >Contact US</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">Site Map</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4" style="color: gray;">Seller Central</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">Become A Seller</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white" style="text-decoration: none;">Seller Dashboard</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4" style="color: gray;">Let's stay in touch</h5>
+
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="form5Example2" class="form-control " />
+          <label class="form-label text-white" for="form5Example2">Email address</label>
+        </div>
+
+        <button type="submit" class="btn btn-outline-white btn-block text-white">Sign in</button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+
+</footer>
+
+</div>
+<!-- End of .container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
